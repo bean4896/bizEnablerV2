@@ -1,39 +1,34 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,jsx,mdx}'],
   theme: {
+    fontSize: {
+      xs: ['0.75rem', { lineHeight: '1rem' }],
+      sm: ['0.875rem', { lineHeight: '1.5rem' }],
+      base: ['1rem', { lineHeight: '1.75rem' }],
+      lg: ['1.125rem', { lineHeight: '1.75rem' }],
+      xl: ['1.25rem', { lineHeight: '2rem' }],
+      '2xl': ['1.5rem', { lineHeight: '2.25rem' }],
+      '3xl': ['1.75rem', { lineHeight: '2.25rem' }],
+      '4xl': ['2rem', { lineHeight: '2.5rem' }],
+      '5xl': ['2.5rem', { lineHeight: '3rem' }],
+      '6xl': ['3rem', { lineHeight: '3.5rem' }],
+      '7xl': ['4rem', { lineHeight: '4.5rem' }],
+    },
     extend: {
+      borderRadius: {
+        '4xl': '2.5rem',
+      },
       fontFamily: {
-        aspekta: ['var(--font-aspekta)', 'sans-serif'],
-      },
-      fontSize: {
-        xs: ['0.75rem', { lineHeight: '1.5' }],
-        sm: ['0.875rem', { lineHeight: '1.5715' }],
-        base: ['1rem', { lineHeight: '1.5', letterSpacing: '-0.01em' }],
-        lg: ['1.125rem', { lineHeight: '1.5', letterSpacing: '-0.01em' }],
-        xl: ['1.25rem', { lineHeight: '1.5', letterSpacing: '-0.01em' }],
-        '2xl': ['1.5rem', { lineHeight: '1.415', letterSpacing: '-0.01em' }],
-        '3xl': ['1.875rem', { lineHeight: '1.333', letterSpacing: '-0.01em' }],
-        '4xl': ['2.25rem', { lineHeight: '1.1', letterSpacing: '-0.01em' }],
-        '5xl': ['2.75rem', { lineHeight: '1', letterSpacing: '-0.01em' }],
-        '6xl': ['3.25rem', { lineHeight: '1', letterSpacing: '-0.01em' }],
-      },
-      letterSpacing: {
-        tighter: '-0.02em',
-        tight: '-0.01em',
-        normal: '0',
-        wide: '0.01em',
-        wider: '0.02em',
-        widest: '0.4em',
+        sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
+        display: [
+          ['Mona Sans', ...defaultTheme.fontFamily.sans],
+          { fontVariationSettings: '"wdth" 125' },
+        ],
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-  ],
-};
+  plugins: [],
+}
