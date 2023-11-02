@@ -38,7 +38,7 @@ function Clients() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 border-[3px] border-[#2b65cb] py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
+        <FadeIn className="flex items-center gap-x-8 max-w-[1050px] m-auto">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
             The partners we have collaborated with.
           </h2>
@@ -48,12 +48,12 @@ function Clients() {
         <div className="flex items-center justify-center">  
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-20 gap-y-10 lg:grid-cols-4 items-center justify-center"
+            className="mt-10 grid grid-cols-1 gap-x-20 gap-y-10 lg:grid-cols-4 items-center justify-center"
           >
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image className='max-w-[220px]' src={logo} alt={client} unoptimized />
+                  <Image className='max-w-[12em]' src={logo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
