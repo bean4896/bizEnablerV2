@@ -17,12 +17,12 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 
-import logoWhiteMyseat from '../images/clients/myseat/logo-white-myseat-3x.png'
-import logoWhiteLCS from '../images/clients/laochangsha/logoLCSWhite.png'
-import logoLokyo from '../images/clients/lokyo/lokyo-white.png'
-import logoJuanXinCai from '../images/clients/juanxincai/juanxincai.png'
-import logoGeMeiNa from '../images/clients/gemeina/gemeina-white.png'
-import logoFreePath from '../images/clients/freepath/freepathWhite.png'
+import logoWhiteMyseat from '@/images/clients/myseat/logo-white-myseat-3x.png'
+import logoWhiteLCS from '@/images/clients/laochangsha/logoLCSWhite.png'
+import logoLokyo from '@/images/clients/lokyo/lokyo-white.png'
+import logoJuanXinCai from '@/images/clients/juanxincai/juanxincai.png'
+import logoGeMeiNa from '@/images/clients/gemeina/gemeina-white.png'
+import logoFreePath from '@/images/clients/freepath/freepathWhite.png'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
