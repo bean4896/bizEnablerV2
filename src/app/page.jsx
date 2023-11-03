@@ -121,7 +121,7 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
+        eyebrow="IT Services"
         title="We help you identify, explore and respond to new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
@@ -256,14 +256,29 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
+<FadeIn>
+      <Container
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial>
+      <SectionIntro
+        eyebrow="Photography Services"
+        title="Exquisite product photos or videos."
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        <p>
+        We have a dedicated photography studio to help you shoot exquisite product photos or videos.
+        </p>
+      </SectionIntro>
+<div className="flex justify-center items-center mt-10 p-4 rounded-2xl bg-neutral-950 border-[3px] border-[#2b65cb]">
+    <video 
+        controls 
+        src="https://res.cloudinary.com/damn4egye/video/upload/v1698977712/video_poxxf8.mp4"
+    >
+        Your browser does not support the video tag.
+    </video>
+</div>
+      </Container>
+      </FadeIn>
 
       <Services />
 
