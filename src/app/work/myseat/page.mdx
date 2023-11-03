@@ -1,0 +1,64 @@
+import logo from './logo-black.png'
+import imageHero from './hero.jpg'
+import imageEmilySelman from './emily-selman.jpeg'
+
+export const caseStudy = {
+  client: 'Myseat',
+  tag:'Furniture E-commerce',
+  title: 'Furniture E-commerce & Singapore Manufacturer',
+    clientWebsiteUrl: 'https://www.myseat.sg/',
+  description:
+    'MySeat is a self-produced and E-commerce furniture company based in Singapore.',
+  summary: [
+    'MySeat is a self-produced and E-commerce furniture company based in Singapore. Offering a diverse range of quality products, mainly solid woods so that all furniture can be custom made. With user-friendly navigation, secure shopping features, and prompt delivery, MySeat simplifies furniture shopping, providing an effortless online buying experience.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-10',
+  service: 'Blockchain development',
+  testimonial: {
+    author: { name: 'Emily Selman', role: 'Head of Engineering at Unseal' },
+    content:
+      'Studio did an amazing job building out our core blockchain infrastructure and I’m sure once PlaceboCoin rallies they’ll be able to finish the project.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+MySeat, a Singapore-based furniture company, engaged us to elevate their digital presence. Recognized for their self-manufactured and self-marketed premium furniture, MySeat was seeking a revival of their e-commerce website, and professional photography to showcase their sophisticated products.
+
+The e-commerce site was built with a strong emphasis on the user experience, employing easy-to-navigate interfaces and streamlined checkout processes. We incorporated various custom features tailored to MySeat's unique custom needs (select woods/material/size before add product to cart), further enhancing the site's functionality and performance.
+
+In parallel, we leveraged our in-house photography studio to capture stunning visuals of MySeat's furniture range. Our team executed a series of professional photo shoots, portraying every detail with finesse and emphasizing the quality and design of their products. These captivating images were instrumental not only in improving the product listings but also in creating vibrant site aesthetics that resonated with MySeat's brand identity.
+
+Post-launch, we continue to provide maintenance and support, ensuring optimal website performance and continually enhancing the user experience.
+
+This collaboration with MySeat validates our capability in delivering robust e-commerce solutions and creative services like product photography, empowering brands to engage their customers more effectively.
+## What we did
+
+<TagList>
+  <TagListItem>Woocommerce Development</TagListItem>
+    <TagListItem>Custom Product Variations</TagListItem>
+  <TagListItem>Product Photos & videos Shooting</TagListItem>
+  <TagListItem>Payment Gateway SetUp</TagListItem>
+</TagList>
+
+{/* <Blockquote
+  author={{ name: 'Emily Selman', role: 'Head of Engineering at Unseal' }}
+  image={{ src: imageEmilySelman }}
+>
+  Studio did an amazing job building out our core blockchain infrastructure and
+  I’m sure once PlaceboCoin rallies they’ll be able to finish the project.
+</Blockquote> */}
+
+<StatList>
+  <StatListItem value="34%" label="Fewer transactions" />
+  <StatListItem value="10%" label="Slower transactions" />
+  <StatListItem value="1000ms" label="Transaction latency" />
+  <StatListItem value="3" label="Active nodes" />
+</StatList>

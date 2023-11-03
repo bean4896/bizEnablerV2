@@ -21,7 +21,7 @@ export default async function CaseStudyLayout({ children, _segments }) {
 
         <header>
           <PageIntro eyebrow="Case Study" title={caseStudy.title} centered>
-            <p>{caseStudy.description}</p>
+            <p>{caseStudy.summary}</p>
             {/* Button to client's webpage */}
             <div className="text-center mt-6">
               <a

@@ -9,17 +9,16 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
+      { title: 'Lokyo', href: '/work/lokyo' },
+      { title: 'Myseat', href: '/work/myseat' },
+      // {
+      //   title: (
+      //     <>
+      //       See all <span aria-hidden="true">&rarr;</span>
+      //     </>
+      //   ),
+      //   href: '/work',
+      // },
     ],
   },
   {
@@ -128,4 +127,4 @@ export function Footer() {
       </FadeIn>
     </Container>
   )
-}
+} 
