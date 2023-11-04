@@ -7,18 +7,19 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'Past Projects',
     links: [
       { title: 'Lokyo', href: '/work/lokyo' },
+      { title: 'Gamana', href: '/work/gamana' },
       { title: 'Myseat', href: '/work/myseat' },
-      // {
-      //   title: (
-      //     <>
-      //       See all <span aria-hidden="true">&rarr;</span>
-      //     </>
-      //   ),
-      //   href: '/work',
-      // },
+      {
+        title: (
+          <>
+            See all <span aria-hidden="true">&rarr;</span>
+          </>
+        ),
+        href: '/work',
+      },
     ],
   },
   {
