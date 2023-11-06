@@ -4,7 +4,6 @@ import { createContext, useContext } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 
 const FadeInStaggerContext = createContext(false)
-
 const viewport = { once: true, margin: '0px 0px -200px' }
 
 export function FadeIn(props) {
@@ -21,10 +20,10 @@ export function FadeIn(props) {
       {...(isInStaggerGroup
         ? {}
         : {
-            initial: 'hidden',
-            whileInView: 'visible',
-            viewport,
-          })}
+          initial: 'hidden',
+          whileInView: 'visible',
+          viewport,
+        })}
       {...props}
     />
   )

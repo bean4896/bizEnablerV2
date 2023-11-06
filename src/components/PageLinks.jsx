@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import clsx from 'clsx'
-
 import { Border } from '@/components/Border'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
