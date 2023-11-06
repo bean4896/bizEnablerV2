@@ -1,10 +1,12 @@
+'use client'
 import { useId } from 'react'
 import Link from 'next/link'
-
+import emailjs from '@emailjs/browser';
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+import { useRef, useState } from 'react';
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
@@ -45,6 +47,22 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
+  const form = useRef();
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_zwo53ln', 'template_9ys01rs', form.current, 'Xo13m8xsD0xNVwoKZ')
+      .then((result) => {
+        console.log(result.text);
+        setSuccess(true);
+      }, (error) => {
+        console.log(error.text);
+        setSuccess(false);
+      });
+  };
+
+
   return (
     <FadeIn className="lg:order-last">
       <form>
@@ -82,6 +100,7 @@ function ContactForm() {
           Let’s work together
         </Button>
       </form>
+      {success && <div className="alert alert-success">Thank you for submit!</div>}
     </FadeIn>
   )
 }
@@ -98,7 +117,6 @@ function ContactDetails() {
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
       {/* <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Email us
