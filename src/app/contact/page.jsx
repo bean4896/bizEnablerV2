@@ -65,7 +65,7 @@ function ContactForm() {
 
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
@@ -151,10 +151,6 @@ function ContactDetails() {
   )
 }
 
-export const metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
 
 export default function Contact() {
   return (
