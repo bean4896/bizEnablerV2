@@ -19,6 +19,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import Script from 'next/script'
 
 const RootLayoutContext = createContext({})
 
@@ -157,6 +158,16 @@ function RootLayoutInner({ children }) {
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-21V77W4TER" />      
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-21V77W4TER');
+        `}
+      </Script>
         <div
           className="absolute left-0 right-0 top-2 z-40 pt-14"
           aria-hidden={expanded ? 'true' : undefined}
