@@ -23,6 +23,7 @@ import logoLokyo from '@/images/clients/lokyo/lokyo-white.png'
 import logoJuanXinCai from '@/images/clients/juanxincai/juanxincai.png'
 import logoGeMeiNa from '@/images/clients/gemeina/gemeina-white.png'
 import logoFreePath from '@/images/clients/freepath/logo-freepath.png'
+import logoStk from '@/images/clients/stkauto/stklogo.png'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
@@ -32,6 +33,7 @@ const clients = [
   ['FreePath', logoFreePath],
   ['JuanXinCai', logoJuanXinCai],
   ['LaoChangSha', logoWhiteLCS],
+  ['STK', logoStk],
 ]
 
 function Clients() {
